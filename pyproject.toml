@@ -1,0 +1,37 @@
+[project]
+name = "llm-finetune"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "ShunsukeOnoo", email = "shunsuke.ono.00@gmail.com" }
+]
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "torch",
+    "pyyaml",
+    "ipykernel",
+    "pip",
+    "hydra-core",
+    "transformers",
+    "datasets>=2.20.0",
+    "fire>=0.6.0",
+    "deepspeed>=0.14.4",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/llm_finetune"]

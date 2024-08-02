@@ -1,0 +1,7 @@
+# Default config for training
+defaults:
+  - training: 
+  - dataset
+
+model_name: 'gpt2-small'
+run_name: 'gpt2-small-test'
