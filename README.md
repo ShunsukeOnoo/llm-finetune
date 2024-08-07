@@ -1,12 +1,9 @@
 # LLM-Finetune
-Some samples to finetune LLM using DeepSpeed.
+Some samples to finetune LLM using DeepSpeed x HuggingFace trainer.
 
 ## Usage
 1. Prepare the environment. Install dependencies listed in the `pyproject.toml` file. 
-2. Prepare the config file. Prepare a deepspeed config, trainer config, and training config.
-3. Run training. You can either use `src/llm_finetune/train.py` (with DeepSpeed) or `train_no_ds.py` (no DeepSpeed for comparison).
-
-## Config
-- 
-- ds_config: DeepSpeed config files.
-- training_config: Config for TrainingArguments class.
+2. Log into Weights & Biases (wandb).
+3. Prepare the config file. 
+4. Run training. When training with DeepSpeed, use `deepspeed src/llm_finetune/train.py --config_path path/to/the/config.yaml`. When training without DeepSpeed, just `python src/llm_finetune/train.py --config_path path/to/the/config.yaml`.
+5. Play with the trained model. (TAB)

@@ -18,6 +18,8 @@ dependencies = [
     "datasets>=2.20.0",
     "fire>=0.6.0",
     "deepspeed>=0.14.4",
+    "setuptools>=72.1.0",
+    "mpi4py>=4.0.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.11"

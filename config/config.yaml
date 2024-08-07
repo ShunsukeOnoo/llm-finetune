@@ -1,7 +1,40 @@
-# Default config for training
-defaults:
-  - training: 
-  - dataset
+# TrainingArguments
+training:
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 1
+  num_train_epochs: 1
+  dataloader_num_workers: 8
+  fp16: true
+  optim: "adamw_torch"
+  learning_rate: 5.0e-5
+  logging_steps: 1
+  evaluation_strategy: "no"
+  save_strategy: "steps"
+  eval_steps: 100
+  save_steps: 2000
+  save_total_limit: 2
+  deepspeed: config/deepspeed/ds_config_zero2.json
+  output_dir: ./outputs/  # everything will be saved in {output_dir}/{run_name}/
+  report_to: "wandb"
 
-model_name: 'gpt2-small'
-run_name: 'gpt2-small-test'
+# Arguments for from_pretrained()
+model:
+  pretrained_model_name_or_path: gpt2  # 137m parameters
+
+# Arguments for load_dataset()
+dataset:
+  path: allenai/cord19   # Covid-19 dataset
+  name: 'metadata'  # if you want to train with the main text not abstract, use 'fulltext'
+  split: train
+  cache_dir: ./cache/
+  trust_remote_code: true
+
+dataset_wrapper:
+  seq_length: 512
+  num_of_sequences: 16  # number of approximate samples to tokenize at a time
+  dataset_clm: abstract
+
+wandb:
+  wandb_project: "llm-finetune"
+
+run_name: "gpt-2-test"
