@@ -13,7 +13,6 @@ training:
   eval_steps: 100
   save_steps: 2000
   save_total_limit: 2
-  deepspeed: config/deepspeed/ds_config_zero2.json
   output_dir: ./outputs/  # everything will be saved in {output_dir}/{run_name}/
   report_to: "wandb"
   max_steps: 1000
@@ -38,4 +37,4 @@ dataset_wrapper:
 wandb:
   wandb_project: "llm-finetune"
 
-run_name: "gpt-2-test"
+run_name: "gpt-2-test-no-deepspeed"

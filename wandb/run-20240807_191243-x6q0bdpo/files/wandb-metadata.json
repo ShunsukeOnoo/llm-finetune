@@ -1,0 +1,211 @@
+{
+    "os": "Linux-5.4.0-169-generic-x86_64-with-glibc2.31",
+    "python": "3.11.8",
+    "heartbeatAt": "2024-08-07T10:12:44.511433",
+    "startedAt": "2024-08-07T10:12:43.905447",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--config_path",
+        "config/config_no_deepspeed.yaml"
+    ],
+    "state": "running",
+    "program": "/home/onoo/projects/llm-finetune/src/llm_finetune/train.py",
+    "codePathLocal": "src/llm_finetune/train.py",
+    "codePath": "src/llm_finetune/train.py",
+    "git": {
+        "remote": "git@github.com:ShunsukeOnoo/llm-finetune.git",
+        "commit": "c1514f381686e31e795363783bb3837aef0502db"
+    },
+    "email": "shunsuke.ono.00@gmail.com",
+    "root": "/home/onoo/projects/llm-finetune",
+    "host": "smith-g08",
+    "username": "onoo",
+    "executable": "/home/onoo/projects/llm-finetune/.venv/bin/python",
+    "cpu_count": 32,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 1672.7992499999998,
+        "min": 1200.0,
+        "max": 4100.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1200.074,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.133,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 4055.806,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1368.838,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.106,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1494.393,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.15,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1308.963,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.173,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.017,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 2111.438,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1239.472,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.135,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.013,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.083,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.025,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.162,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1711.08,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.174,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1463.868,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 2135.24,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.155,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1253.028,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1341.103,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1693.45,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1806.837,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 2262.03,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 2186.991,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.157,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 4039.485,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 4055.922,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.075,
+            "min": 1200.0,
+            "max": 4100.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 390.05749893188477,
+            "used": 38.232383728027344
+        }
+    },
+    "gpu": "Tesla V100S-PCIE-32GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla V100S-PCIE-32GB",
+            "memory_total": 34359738368
+        }
+    ],
+    "memory": {
+        "total": 754.5269889831543
+    }
+}
