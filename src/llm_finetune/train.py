@@ -10,9 +10,6 @@ from transformers import Trainer, AutoModelForCausalLM, AutoTokenizer, TrainingA
 from src.llm_finetune.dataset import ConstantLengthDataset
 
 
-def preprocess(samples, tokenizer, max_length):
-    return tokenizer(samples['text'], padding='max_length', truncation=True, max_length=max_length, return_tensors='pt')
-
 def load_yaml(path):
     with open(path, 'r') as f:
         return yaml.safe_load(f)
