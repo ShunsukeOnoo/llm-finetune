@@ -1,6 +1,6 @@
 # TrainingArguments
 training:
-  per_device_train_batch_size: 16
+  per_device_train_batch_size: 4
   gradient_accumulation_steps: 1
   num_train_epochs: 1
   dataloader_num_workers: 8
@@ -11,16 +11,16 @@ training:
   evaluation_strategy: "no"
   save_strategy: "steps"
   eval_steps: 100
-  save_steps: 2000
+  save_steps: 4000
   save_total_limit: 2
-  deepspeed: config/deepspeed/ds_config_zero2.json
+  deepspeed: config/deepspeed/ds_config_zero3.json
   output_dir: ./outputs/  # everything will be saved in {output_dir}/{run_name}/
   report_to: "wandb"
   max_steps: 1000
 
 # Arguments for from_pretrained()
 model:
-  pretrained_model_name_or_path: gpt2  # 137m parameters
+  pretrained_model_name_or_path: gpt2-medium  # 380m parameters
 
 # Arguments for load_dataset()
 dataset:
@@ -38,4 +38,4 @@ dataset_wrapper:
 wandb:
   wandb_project: "llm-finetune"
 
-run_name: "gpt-2-test-local"
+run_name: "gpt-2-medium-local"

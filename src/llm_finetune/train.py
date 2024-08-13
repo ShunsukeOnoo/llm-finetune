@@ -2,11 +2,14 @@
 Finetune the LLM model on the small dataset.
 """
 import os
+import sys
 import yaml
 import fire
 import torch
 from datasets import load_dataset
 from transformers import Trainer, AutoModelForCausalLM, AutoTokenizer, TrainingArguments
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 from src.llm_finetune.dataset import ConstantLengthDataset
 
 
